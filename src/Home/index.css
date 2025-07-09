@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  overflow-y: scroll; 
+  overflow-x: hidden;
+  scrollbar-width: none;   
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+
+.home-page-container{
+  min-height:100vh;
+  background-color: #121212;
+  width:100vw;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.home-page-container::-webkit-scrollbar {
+  display: none;
+}
+
+.home-page-image{
+  background-image: url('https://res.cloudinary.com/dgd7f5oj9/image/upload/v1751222344/Image_qapwt4.png');
+  height:600px;
+  width:1440px;
+  background-size: cover;
+}
+
+.home-page-shadow{
+  background-image:linear-gradient(to bottom,#00000000,#1818188B);
+  height:150px;
+  margin-top:90px;
+}
+
+.home-page-h1{
+  color:white;
+  font-weight:600;
+  font-size:45px;
+  margin-left:270px;
+  margin-top:60px;
+}
+.home-page-p1{
+  color:white;
+  font-size:17px;
+  margin-left:270px;
+  margin-top:10px;
+  width:380px;
+}
+
+.home-page-btn{
+  color:#171F46;
+  background-color:white;
+  border-radius:4px;
+  padding:20px 15px 23px 5px;
+  height:40px;
+  margin-left:270px;
+  margin-top:18px;
+  text-align: center;
+  font-weight: 500;
+  width:auto;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.next-arrow {
+    right: -35px;
+}
+
+.prev-arrow {
+    left: -35px;
+}
+
+.slider-movie-item {
+    padding: 10px;
+}
+
+.movie-poster:hover {
+    transform: scale(1.2);
+}
+
+.movie-poster {
+    width: 260px;
+    height:240px; 
+    border-radius:3px;
+    transition: transform 0.6s ease;
+}
+
+
+
+.home-section-icon-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  margin-top:50px;
+}
+
+.home-page-p2{
+  color:white;
+  font-size:17px;
+  text-align: right;
+  margin-left:675px;
+}
+
+.loader-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.home-page-p3{
+  color:white;
+  font-size:17px;
+  align-self:center;
+  margin-bottom:30px;
+}
+
+.marginhome{
+  margin-bottom:30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.youtube-embed-container{
+  height:100vh;
+  width:100vw;
+}
+
+.home-page-trending{
+  font-weight:500;
+  font-size:18px;
+  margin-top:20px;
+  margin-bottom:20px;
+  color:white;
+  margin-left:140px;
+}
+
+.home-slider{
+  margin-left:130px;
+  margin-right:130px;
+}
+
+.home-icons-margin{
+  margin-right:18px;
+  height:20px;
+  width:20px;
+}
+
+
+@media (max-width:480px){
+  .home-page-image{
+  background-image: url('https://res.cloudinary.com/dgd7f5oj9/image/upload/v1751222344/Image_qapwt4.png');
+  height:300px;
+  width:100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-page-container{
+  min-height:100%;
+  background-color: #121212;
+  width:100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.home-page-h1{
+  font-size:30px;
+  margin-left:50px;
+  margin-top:30px;
+}
+.home-page-p1{
+  color:white;
+  font-size:13px;
+  font-size:13px;
+  margin-top:10px;
+  margin-left:50px;
+  margin-right:20px;
+  width:250px;
+}
+
+.home-page-btn{
+  padding:15px 10px 16px 5px;
+  height:20px;
+  margin-left:50px;
+  margin-top:15px;
+  font-weight: 500;
+  width:auto;
+  font-size: 12px;;
+}
+
+.home-page-trending{
+  font-size:15px;
+  margin-left:28px;
+}
+
+.home-slider{
+  margin-left:28px;
+  margin-right:28px;
+}
+
+.movie-poster {
+    width: 100px;
+    height:130px; 
+}
+.home-page-h1{
+  font-size:22px;
+}
+
+.custom-arrow {
+    width: 15px;
+    height: 15px;
+}
+
+.next-arrow {
+    right: -10px;
+}
+
+.prev-arrow {
+    left: -10px;
+}
+.slider-movie-item {
+    padding: 10px;
+}
+.home-page-p3{
+  margin:auto;
+  margin-bottom:30px;
+  font-size:12px;
+}
+
+.home-icons-margin{
+  margin-right:10px;
+  height:12px;
+  width:12px;
+}
+.marginhome{
+  margin-bottom:0px;
+}
+
+.home-section-icon-card{
+  margin-top:15px;
+}
+
+}
+
+@media screen and (min-width: 540px) and (max-width: 1024px){
+  .home-page-image{
+  background-image: url('https://res.cloudinary.com/dgd7f5oj9/image/upload/v1751222344/Image_qapwt4.png');
+  height:500px;
+  width:100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.home-page-h1{
+  margin-left:100px;
+}
+.home-page-p1{
+  margin-left:100px;
+}
+
+.home-page-btn{
+  margin-left:100px;
+}
+
+.home-page-trending{
+  margin-left:85px;
+}
+
+.home-slider{
+  margin-left:80px;
+  margin-right:80px;
+}
+
+.movie-poster {
+    width: 150px;
+    height:180px; 
+}
+.home-page-h1{
+  font-size:22px;
+}
+
+.custom-arrow {
+    width: 15px;
+    height: 15px;
+}
+
+.next-arrow {
+    right: -10px;
+}
+
+.prev-arrow {
+    left: -10px;
+}
+.slider-movie-item {
+    padding: 10px;
+}
+.home-page-p3{
+  margin:auto;
+  margin-bottom:30px;
+  font-size:16px;
+}
+
+.home-icons-margin{
+  margin-right:10px;
+  height:16px;
+  width:16px;
+}
+.marginhome{
+  margin-bottom:0px;
+}
+
+.home-section-icon-card{
+  margin-top:15px;
+}
+
+}

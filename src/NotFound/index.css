@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.notfound-card{
+    height:100vh;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+    background-position: center;
+    background-image: url("https://res.cloudinary.com/dgd7f5oj9/image/upload/v1751265993/snow-removal-machine-working-high-ski-slope-snowstorm_454047-2149_1_2x_kt8r5k.png");
+}
+
